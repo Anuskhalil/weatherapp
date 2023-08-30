@@ -25,10 +25,11 @@ function AppSearch() {
         console.log(`getting weather of ${inputRef.current.value}...`)
         
         try {
-            const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=7bcce156f9ec46b8988151742232808&q=${inputRef.current.value}&aqi=no`)
+            const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=7bcce156f9ec46b8988151742232808&q=${inputRef.current.value}&aqi=no`)
             console.log("response", response.data);
             setData(response.data)
         }
+
 
         catch (error) {
             console.log(error)
