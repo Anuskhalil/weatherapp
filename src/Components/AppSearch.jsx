@@ -102,7 +102,7 @@ function AppSearch() {
                             </div>
                             <br />
                             <div className='temperature'>
-                                 {data?.current?.temp_c}℃ {data?.current?.temp_f}℉
+                            <img id='weather-icon' src={`https:${data?.current?.condition?.icon}`} alt="Weather" /> {data?.current?.temp_c}℃ {data?.current?.temp_f}℉
                             </div>
                             <br />
                             <div className='condition'>
